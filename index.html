@@ -1,11 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Emergency-Hotline</title>
+
+    <!-- daisyUI and tailwind css cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+
 </head>
+
 <body>
-    
+    <!-- navbar -->
+    <nav class="flex justify-between items-center mx-12 my-6">
+        <div class="flex items-center gap-3">
+            <img src="./assets/logo.png" alt="logo" class="w-13">
+            <div>
+                 <img src="./assets/EmergencyService.png" alt="emergency service">
+            </div>
+        </div>
+        <div class="flex gap-5">
+            <div class="flex bg-[#41ff6b1a] py-3 px-9 rounded-full font-black">
+                <p>0</p>
+                <img src="./assets/heart.png" alt="favorite" class="w-7 ml-3">
+            </div>
+            <div class="flex bg-[#41ff6b1a] py-3 px-9 rounded-full font-black">
+                <p>100</p>
+                <img src="./assets/coin.png" alt="coin" class="w-7 ml-3">
+            </div>
+            <div class="flex bg-[#00A63E] py-3 px-9 rounded-full text-white font-bold">
+                <p>0</p>
+                <p class="ml-3">COPY</p>
+            </div>
+        </div>
+    </nav>
 </body>
+
 </html>
