@@ -17,7 +17,7 @@ document.getElementById('cards-container').addEventListener('click', function (e
         const emergencyServiceNumber = callBtn.parentNode.parentNode.children[2].children[0].innerText
 
         // coin balance check and calling
-        if(navCoins <= 0){
+        if(navCoins < 20){
             alert("⚠️ আপনার পর্যাপ্ত কয়েন নেই। কল করতে কমপক্ষে ২০ টা কয়েন লাগবে।");
             return;
         }
@@ -59,7 +59,7 @@ document.getElementById('cards-container').addEventListener('click', function (e
         const navCopyItems = Number(getElement('nav-copy-items').innerText);
         const navCopyItemsNewValue = navCopyItems + 1;
         getElement('nav-copy-items').innerText = navCopyItemsNewValue;
-        
+
         navigator.clipboard.writeText(emergencyServiceNumber);
         alert(`নম্বর কপি হয়েছে: ${emergencyServiceNumber}`);
     }
