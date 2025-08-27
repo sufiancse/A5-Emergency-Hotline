@@ -18,7 +18,7 @@ document.getElementById('cards-container').addEventListener('click', function (e
 
         // coin balance check and calling
         if(navCoins < 20){
-            alert("⚠️ আপনার পর্যাপ্ত কয়েন নেই। কল করতে কমপক্ষে ২০ টা কয়েন লাগবে।");
+            alert("⚠️ আপনার পর্যাপ্ত কয়েন নেই। কল করতে কমপক্ষে ২০ কয়েন লাগবে।");
             return;
         }
         else if(navCoins){
@@ -40,7 +40,7 @@ document.getElementById('cards-container').addEventListener('click', function (e
                     <div>${new Date().toLocaleTimeString()}</div>
                 </div>
         `
-        callHistory.appendChild(div)
+        callHistory.prepend(div)
 
     }
 
