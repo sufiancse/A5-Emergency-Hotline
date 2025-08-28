@@ -85,5 +85,6 @@ document.body.appendChild(h1)
 5. **preventDefault()**
 - event.preventDefault() is stop browser default action.
 - when submit form it stop auto reloading
-**stopPropagation()**
+
+ **stopPropagation()**
 - event.stopPropagation() is stop event propagation, stop capturing.
